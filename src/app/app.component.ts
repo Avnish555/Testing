@@ -9,10 +9,10 @@ import { Binding } from './Binding'
 export class AppComponent {
   title = 'Angular';
   binding: Binding = {
-    fname: 'Avnish',
-    lname: 'Dubey',
+    fname: 'xyz',
+    lname: 'pqr',
     password: 'avn',
-    email: 'avnish@gmail.com'
+    email: 'eaaa@gmail.com'
       };
   
  

@@ -1,2 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.mat-form-field-infix{
+    background-color: rgba(104, 103, 103, 0.856);
+}
+.mat-input-element.mat-form-field-autofill-control {
+    color: bisque;
+    margin-left: 20px;
+}
+.example-form{
+    border: 1px solid black;
+    padding: 20px;
+}
+.move{
+ text-align: center;
+}
