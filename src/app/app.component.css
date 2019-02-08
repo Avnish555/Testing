@@ -1,0 +1,17 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    border-block-end-color: brown;
+
+  }
+  
+  .example-full-width {
+    width: 100%;
+    
+  }
+ . btn{
+    padding: 10px 10px 10px 10px;
+  }
+  
