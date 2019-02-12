@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { Binding } from './Binding'
 
 @Component({
@@ -8,12 +8,9 @@ import { Binding } from './Binding'
 })
 export class AppComponent {
   title = 'Angular';
-  binding: Binding = {
-    fname: 'xyz',
-    lname: 'pqr',
-    password: 'avn',
-    email: 'eaaa@gmail.com'
-      };
   
- 
+  
+
+
+
 }

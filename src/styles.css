@@ -1,16 +1,134 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 .mat-form-field-infix{
-    background-color: rgba(104, 103, 103, 0.856);
+    background-color: none;
+    border: 1px solid rgb(17, 17, 17);
 }
 .mat-input-element.mat-form-field-autofill-control {
-    color: bisque;
+    color: #000;
     margin-left: 20px;
 }
 .example-form{
     border: 1px solid black;
-    padding: 20px;
+    padding: 10px;
+}
+#bgcolor{
+    background-color: #000;
 }
 .move{
  text-align: center;
+}
+ .shift{
+   text-align: right;
+ } 
+ .mat-form-field-appearance-legacy .mat-form-field-underline {
+ background-color: rgba(0, 0, 0, 0);
+}
+.test{
+    width:100%;
+    margin-right: 64px;
+    margin-bottom: 30px;
+}
+app-table{
+    width:90%;
+    margin-left: 115px;
+    margin-bottom: 2px;
+}
+#tble{
+    border: 1px solid rgb(73, 73, 73);
+}
+table{
+    width:100%;
+    
+}
+th<.mat-elevation-z8{
+    background: #000;
+    
+}
+#box-iconn{
+    color: grey;
+    font-size: 28px;
+}
+button{
+    border: 3px solid black;
+    color: black;
+}
+.aligned-with-iconn1{
+    margin-left: 20px; 
+}
+#table-width{
+    width: 60%;
+}
+.aligned-with-iconn{
+    margin-left: 15px; 
+    border: 1 px solid black;
+}
+.aligned-with-icon{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 15px; /* optional */
+}
+.labled{
+    padding: 8px 25px 8px 25px;
+}
+
+.mat-header-cell{
+    color:white;
+}
+.header{
+    text-align:left;
+     display:inline;
+     line-height: 40px; 
+ }
+ .dateinput{
+     float:right;
+     display:inline;
+ }
+
+.mat-cell>.mat-flat-button{
+    background-color: black;
+    margin: 3px;
+}
+.mat-button-wrapper{
+    color: #000;
+}
+.mat-elevation-z8{
+    margin-bottom: 30px;
+  float: right;
+}
+#flot{
+    float: right;
+    margin-top: -10px;
+    margin-right: 2px;
+}
+.mat-flat-button> .mat-button-wrapper{
+    color: #fff;
+}
+#rightarrow{
+    background-color: black;
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    margin-left: 4px;
+    
+}
+app-table > div > .material-icons{
+    position: relative;
+    top: -20px;
+    font-size: 30px;
+}
+#butn > .mat-button-wrapper{
+    color: blue;
+    text-decoration: underline;
+}
+#butnb > .mat-button-wrapper{
+    color: blue;
+    text-decoration: underline;
+}
+
+#lasttd >.mat-stroked-button{
+border-radius: 0%;
+}
+#box-icon{
+    margin-bottom: 20px;
 }

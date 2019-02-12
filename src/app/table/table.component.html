@@ -1,0 +1,54 @@
+<table id="tble" mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="checked">
+      <th id="bgcolor" mat-header-cell *matHeaderCellDef>  </th>
+      <td mat-cell *matCellDef="let element"> <mat-checkbox></mat-checkbox> </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="desc">
+      <th id="bgcolor" mat-header-cell *matHeaderCellDef>  Item Description</th>
+      <td mat-cell *matCellDef="let element"> {{element.desc}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="code">
+      <th id="bgcolor" mat-header-cell *matHeaderCellDef> Item Code</th>
+      <td mat-cell *matCellDef="let element"> {{element.code}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="details">
+      <th id="bgcolor" mat-header-cell *matHeaderCellDef>  Detailed Description </th>
+      <td class="btn" mat-cell *matCellDef="let element"><button mat-flat-button>View</button><button mat-flat-button>Edit</button> </td>
+    </ng-container>
+    <ng-container matColumnDef="uom">
+        <th id="bgcolor" mat-header-cell *matHeaderCellDef> UOM </th>
+        <td mat-cell *matCellDef="let element"> {{element.uom}} </td>
+      </ng-container>
+      <ng-container matColumnDef="quantity">
+          <th id="bgcolor" mat-header-cell *matHeaderCellDef> Quantity </th>
+          <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
+        </ng-container>
+      <ng-container matColumnDef="delivery">
+          <th id="bgcolor" mat-header-cell *matHeaderCellDef> Delivery Date </th>
+          <td mat-cell *matCellDef="let element"> {{element.delivery}} </td>
+        </ng-container>
+        <ng-container matColumnDef="template">
+            <th id="bgcolor" mat-header-cell *matHeaderCellDef> Template </th>
+            <td mat-cell *matCellDef="let element"> {{element.template}} </td>
+          </ng-container>
+          <ng-container matColumnDef="delete">
+              <th id="bgcolor" mat-header-cell *matHeaderCellDef> </th>
+              <td mat-cell *matCellDef="let element"><mat-icon>delete</mat-icon></td>
+            </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <div><mat-icon >add_box</mat-icon><span id="flot">Go to Template<span id="rightarrow">&#x27F6;</span></span></div>
+  

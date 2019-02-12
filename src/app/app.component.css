@@ -6,12 +6,39 @@
     border-block-end-color: brown;
 
   }
-  
+  app-tablepan{
+    width: 100%;
+  }
+  input{
+    padding: 20px;
+  }
   .example-full-width {
     width: 100%;
     
   }
- . btn{
+ /* . btn{
     padding: 10px 10px 10px 10px;
+  } */
+ .shift{
+   text-align: right;
+   width:50%;
+   color: #fff;
+ } 
+ #text{
+  width:50%;
+  color: #fff;
+ }
+
+ #headerbg{
+   background-color: rgb(121, 118, 118); 
+   
+   height: 56px;
+  }
+  .example-container {
+    display: flex;
+    flex-direction: column;
   }
   
+  .example-container > * {
+    width: 100%;
+  }

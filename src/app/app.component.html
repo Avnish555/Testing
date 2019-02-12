@@ -1,5 +1,5 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div>
+<mat-toolbar id="headerbg"> <span id="text">Manual RFX</span> <span class="shift" >RFX No: REQXXXXXX</span></mat-toolbar>
+<!-- <div>
 <div style="text-align:left">
 <img width="100" float="left" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
@@ -10,7 +10,7 @@
   </h1>
 
 </div>
-</div>
+</div> -->
 <!-- <h2>Here are some links to help you start: </h2>
 <ul>
   <li>
@@ -25,25 +25,25 @@
 </ul> -->
 
 
-<form class="example-form" >
+<!-- <form #myForm="ngForm" class="example-form" >
     <h2 style="text-align:center;margin-bottom: 25px;margin-top: -10px;">Register to signin</h2>
   <mat-form-field class="example-full-width">
-    <input [(ngModel)]="binding.fname" name="fname" matInput placeholder="Firstname" value="">
+    <input [(ngModel)]="binding.fname" name="fname" matInput placeholder="Firstname" value="" required>
 
   </mat-form-field>
   {{binding.fname}}
   <mat-form-field class="example-full-width">
-    <input [(ngModel)]="binding.lname" name="lname" matInput placeholder="Lastname" value="">
+    <input [(ngModel)]="binding.lname" name="lname" matInput placeholder="Lastname" value="" required>
 
   </mat-form-field>
   {{binding.lname}}
   <mat-form-field class="example-full-width">
-    <input [(ngModel)]="binding.email" name="email" matInput placeholder="Email" value="">
+    <input [(ngModel)]="binding.email" name="email" matInput placeholder="Email" value="" required>
 
   </mat-form-field>
   {{binding.email}}
   <mat-form-field class="example-full-width">
-    <input [(ngModel)]="binding.password" name="password" matInput placeholder="Password" value="">
+    <input [(ngModel)]="binding.password" name="password" matInput placeholder="Password" value="" required>
   
   </mat-form-field>
   {{binding.password}}
@@ -51,15 +51,43 @@
   
   
   <mat-form-field class="example-full-width">
-    <input  matInput placeholder="Mobile No" value="">
+    <input  matInput placeholder="Mobile No" value="" required>
   </mat-form-field>
 <div class="move">
-  <button style="padding: 10px 10px 10px 10px; background-color: crimson;" 
+  <button [disabled]="myForm.invalid" style="padding: 10px 10px 10px 10px; background-color: crimson;" 
   >Register</button>
   
   Already a user: <a href="#">Signin</a> 
   </div>
-</form>
+</form> -->
+
+
+
+
+  <mat-grid-list cols="4" rowHeight="4:3">
+      <!-- <mat-grid-tile><mat-grid-tile-header>RFX Title: Catalist for DTA refinery</mat-grid-tile-header><hr></mat-grid-tile> -->
+      <!-- <mat-grid-list cols="3" style="padding:10px"> -->
+
+        <!-- Section for date input -->
+         
+  <!-- User details section -->
+          <mat-grid-tile [colspan] = 1>
+              <app-date></app-date>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan] = 3>
+            <app-table></app-table>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan] = 4>
+        <app-tablepan></app-tablepan>
+         </mat-grid-tile>
+          
+      
+    
+    
+    </mat-grid-list>
+ 
+      
+
 
  
  
